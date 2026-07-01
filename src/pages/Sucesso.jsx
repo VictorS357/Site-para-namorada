@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Header } from './Components/Header';
+import { Cronometro } from './Components/Cronometro';
 import './Sucesso.css'
 
 
@@ -19,12 +20,8 @@ function Sucesso() {
 
         <section className="tempo">
           <div className="cronometro-container">
-            <h2 className="titulo">
-              
-            </h2>
-            <div className="cronometro">
-
-            </div>
+            <h2 className="titulo">Eu te amo há:</h2>
+            <Cronometro />
           </div>
         </section>
       </main>

@@ -1,0 +1,41 @@
+.cronometro {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cronometro .unidade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 10px 14px;
+  min-width: 56px;
+  box-shadow: 0 8px 20px rgba(255, 105, 135, 0.25);
+}
+
+.cronometro .valor {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #d6336c;
+}
+
+.cronometro .rotulo {
+  font-size: 0.75rem;
+  color: #7a4a56;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 480px) {
+  .cronometro .unidade {
+    min-width: 46px;
+    padding: 8px 10px;
+  }
+
+  .cronometro .valor {
+    font-size: 1.3rem;
+  }
+}
