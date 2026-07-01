@@ -1,42 +1,11 @@
-.sucesso .primeiro-encontro {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-}
-
-.sucesso .encontro-container {
-  max-width: 560px;
-  margin: 0 auto;
-  background: rgba(255, 240, 243, 0.92);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 209, 102, 0.35);
-  border-radius: 24px;
-  padding: 32px 28px;
-  text-align: center;
-  box-shadow: 0 20px 45px rgba(89, 13, 34, 0.45);
-}
-
-.sucesso .encontro-container .titulo {
-  color: var(--vinho);
-  text-shadow: none;
-}
-
-.sucesso .encontro-container .texto {
-  color: var(--texto-vinho);
-  font-size: 1.05rem;
-  line-height: 1.6;
-  margin: 20px 0 24px;
-  white-space: pre-line;
-  text-shadow: none;
-}
-
-.sucesso .galeria {
+.galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 12px;
+  margin-bottom: 20px;
 }
 
-.sucesso .galeria .foto {
+.galeria .foto {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
@@ -44,8 +13,11 @@
   box-shadow: 0 8px 16px rgba(89, 13, 34, 0.35);
 }
 
-@media (max-width: 480px) {
-  .sucesso .encontro-container {
-    padding: 24px 20px;
-  }
+.texto {
+  color: var(--texto-vinho);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+  white-space: pre-line;
+  font-weight: 500;
 }

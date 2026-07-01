@@ -7,7 +7,7 @@ export function Amando() {
       <div className="cronometro-container">
         <h2 className="titulo">Eu te amo há:</h2>
         <Cronometro />
-        <p>A partir de agr vamos só aumentar esses anos aí kkkkkk</p>
+        <p className="frase">A partir de agr vamos só aumentar esses anos aí kkkkkk</p>
       </div>
     </section>
   );

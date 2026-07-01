@@ -4,14 +4,14 @@
   text-align: center;
 }
 
-.sucesso .titulo {
+.cronometro-container .titulo {
   font-size: 1.6rem;
   margin: 0 0 16px;
   color: var(--dourado);
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 }
 
-.sucesso p {
+.cronometro-container .frase {
   margin-top: 10px;
   font-weight: 500;
   color: var(--creme);
