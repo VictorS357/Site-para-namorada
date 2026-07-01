@@ -6,10 +6,10 @@ const FRASES_NAO = [
   'Não',
   'Tem certeza?',
   'Pensa bem...',
-  'Só mais uma vez, tem certeza?',
-  'Vai perder essa chance?',
-  'Última chance!',
-  'Ok, mas era pra clicar no Sim...',
+  'Não me ama mais?',
+  'Eu vou chorar amor',
+  'Sério msm??',
+  'Haha ri um monte, clica no sim agr',
 ]
 
 function Pedido() {
@@ -36,7 +36,7 @@ function Pedido() {
 
       <section className="cartao">
         <h1>Amor, você tá pronta para um novo "nós"?</h1>
-        <p className="subtitulo">A resposta certa é só uma... 😉</p>
+        <p className="subtitulo">A resposta certa é só uma KAKAKAKAKA</p>
 
         <div className="botoes">
           <button
