@@ -1,0 +1,21 @@
+.sucesso .cronometro-container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.sucesso .titulo {
+  font-size: 1.6rem;
+  margin: 0 0 16px;
+}
+
+.sucesso p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.sucesso .titulo,
+.sucesso p {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}

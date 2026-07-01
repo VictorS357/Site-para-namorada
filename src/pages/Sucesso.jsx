@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Header } from './Components/Header';
+import { Amando } from './Components/Amando';
 import { Cronometro } from './Components/Cronometro';
 import './Sucesso.css'
+
 
 
 function Sucesso() {
@@ -18,13 +20,7 @@ function Sucesso() {
           ))}
         </div>
 
-        <section className="tempo">
-          <div className="cronometro-container">
-            <h2 className="titulo">Eu te amo há:</h2>
-            <Cronometro />
-            <p>A partir de agr vamos só aumentar esses anos aí kkkkkk</p>
-          </div>
-        </section>
+        <Amando />
       </main>
     </>
   )
