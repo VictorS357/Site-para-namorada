@@ -3,12 +3,6 @@ import './Header.css';
 export function Header() {
   return (
     <header>
-      <div className="h1-container">
-        <h1>
-          EU TE AMO MAIS QUE TUDO MEU AMOR
-        </h1>
-      </div>
-
       <div className="musica">
         <iframe
           data-testid="embed-iframe"
