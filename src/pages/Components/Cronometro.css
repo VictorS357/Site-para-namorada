@@ -9,22 +9,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 240, 243, 0.92);
+  border: 1px solid rgba(255, 209, 102, 0.35);
   border-radius: 12px;
   padding: 10px 14px;
   min-width: 56px;
-  box-shadow: 0 8px 20px rgba(255, 105, 135, 0.25);
+  box-shadow: 0 8px 20px rgba(89, 13, 34, 0.35);
 }
 
 .cronometro .valor {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #d6336c;
+  color: var(--carmim);
 }
 
 .cronometro .rotulo {
   font-size: 0.75rem;
-  color: #7a4a56;
+  color: var(--texto-vinho);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }

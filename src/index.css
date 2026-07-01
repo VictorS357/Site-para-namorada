@@ -5,6 +5,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --vinho-profundo: #2b0111;
+  --vinho: #590d22;
+  --carmim: #c9184a;
+  --rosa: #ff4d6d;
+  --rosa-claro: #ffccd5;
+  --dourado: #ffd166;
+  --creme: #fff0f3;
+  --texto-vinho: #6b2737;
 }
 
 * {
