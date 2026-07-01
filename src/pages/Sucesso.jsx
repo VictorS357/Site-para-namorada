@@ -7,6 +7,8 @@ import { Carrossel } from './Components/Carrossel';
 import './Sucesso.css'
 import { PrimeiroEncontro } from './Components/PrimeiroEncontro';
 import { DiaEuTeAmo } from './Components/DiaEuTeAmo';
+import { EuTeAmoDesde } from './Components/EuTeAmoDesde';
+import { PrimeiroBeijo } from './Components/PrimeiroBeijo';
 
 
 
@@ -31,6 +33,15 @@ function Sucesso() {
         <PrimeiroEncontro />
 
         <DiaEuTeAmo />
+
+        <div className="timer-text">
+          <h1 className="timer-title">Achou que eu ia esquecer dessas datas amor?</h1>
+          <p>Inclusive, eu acho que a gente tinha que adicionar mais uma data pra nossa lista hein... *pica-pau com a mão na boca*</p>
+        </div>
+
+        <EuTeAmoDesde />
+
+        <PrimeiroBeijo />
       </main>
     </>
   )

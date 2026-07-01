@@ -2,11 +2,9 @@ import { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import './Cronometro.css';
 
-const INICIO = dayjs('2026-04-30T15:00:00');
-
-function calcularTempo(agora) {
-  const anos = agora.diff(INICIO, 'year');
-  const apósAnos = INICIO.add(anos, 'year');
+function calcularTempo(inicio, agora) {
+  const anos = agora.diff(inicio, 'year');
+  const apósAnos = inicio.add(anos, 'year');
 
   const meses = agora.diff(apósAnos, 'month');
   const apósMeses = apósAnos.add(meses, 'month');
@@ -25,7 +23,7 @@ function calcularTempo(agora) {
   return { anos, meses, dias, horas, minutos, segundos };
 }
 
-export function Cronometro() {
+export function Cronometro({ inicio }) {
   const [agora, setAgora] = useState(() => dayjs());
 
   useEffect(() => {
@@ -33,7 +31,7 @@ export function Cronometro() {
     return () => clearInterval(id);
   }, []);
 
-  const { anos, meses, dias, horas, minutos, segundos } = calcularTempo(agora);
+  const { anos, meses, dias, horas, minutos, segundos } = calcularTempo(inicio, agora);
 
   const unidades = [
     { valor: anos, rotulo: 'anos' },

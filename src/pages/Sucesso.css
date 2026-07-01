@@ -43,6 +43,22 @@
   animation-duration: 7s;
 }
 
+.timer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-text h1 {
+  color: var(--dourado);
+  margin-bottom: 0;
+}
+
+.timer-text p {
+  margin-top: 10px;
+  color: white;
+}
+
 @keyframes subir {
   0% {
     transform: translate(0, 0) rotate(0deg);
