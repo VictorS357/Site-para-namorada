@@ -76,3 +76,60 @@
   }
 }
 
+.sucesso .proxima-etapa-cta {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.sucesso .btn-brilhante {
+  border: none;
+  border-radius: 999px;
+  padding: 20px 40px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--vinho-profundo);
+  background: linear-gradient(120deg, var(--dourado), #fff6dd, var(--dourado));
+  background-size: 220% 220%;
+  cursor: pointer;
+  animation:
+    brilho-pulso 1.6s ease-in-out infinite,
+    brilho-fluxo 4s linear infinite;
+}
+
+.sucesso .legenda-cta {
+  margin: 0;
+  color: var(--creme);
+  font-weight: 500;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+@keyframes brilho-pulso {
+  0%,
+  100% {
+    box-shadow:
+      0 0 20px rgba(255, 209, 102, 0.75),
+      0 0 45px rgba(255, 209, 102, 0.45);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow:
+      0 0 35px rgba(255, 209, 102, 1),
+      0 0 70px rgba(255, 209, 102, 0.7);
+    transform: scale(1.06);
+  }
+}
+
+@keyframes brilho-fluxo {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 220% 50%;
+  }
+}
+

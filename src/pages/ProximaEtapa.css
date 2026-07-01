@@ -1,0 +1,87 @@
+.proxima-etapa {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  overflow: hidden;
+  background: var(--vinho-profundo);
+}
+
+.proxima-etapa .cartao {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 240, 243, 0.92);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 209, 102, 0.35);
+  border-radius: 24px;
+  padding: 48px 40px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 45px rgba(89, 13, 34, 0.45);
+}
+
+.proxima-etapa .cartao h1 {
+  margin: 0;
+  font-size: 1.7rem;
+  color: var(--vinho);
+}
+
+.proxima-etapa .coracoes-flutuantes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.proxima-etapa .coracao {
+  position: absolute;
+  bottom: -10%;
+  left: calc(var(--i) * 8.3%);
+  font-size: 1.8rem;
+  opacity: 0.8;
+  animation: subir 9s ease-in infinite;
+  animation-delay: calc(var(--i) * -0.7s);
+}
+
+.proxima-etapa .coracao:nth-child(3n) {
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+
+.proxima-etapa .coracao:nth-child(4n) {
+  font-size: 2.4rem;
+  animation-duration: 12s;
+}
+
+.proxima-etapa .coracao:nth-child(5n) {
+  filter: hue-rotate(25deg);
+  animation-duration: 7s;
+}
+
+@keyframes subir {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(18px, -55vh) rotate(-8deg);
+  }
+  100% {
+    transform: translate(-15px, -110vh) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .proxima-etapa .cartao {
+    padding: 36px 24px;
+  }
+  .proxima-etapa .cartao h1 {
+    font-size: 1.4rem;
+  }
+}

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Header } from './Components/Header';
 import { Amando } from './Components/Amando';
 import { Cronometro } from './Components/Cronometro';
@@ -13,6 +13,8 @@ import { PrimeiroBeijo } from './Components/PrimeiroBeijo';
 
 
 function Sucesso() {
+  const navigate = useNavigate();
+
   return (
     <>
       <main className="sucesso">
@@ -42,6 +44,17 @@ function Sucesso() {
         <EuTeAmoDesde />
 
         <PrimeiroBeijo />
+
+        <section className="proxima-etapa-cta">
+          <button
+            type="button"
+            className="btn-brilhante"
+            onClick={() => navigate('/proxima-etapa')}
+          >
+            Pronta para mais uma etapa da gente?
+          </button>
+          <p className="legenda-cta">Tu só tem uma opção vida KAKAKAK</p>
+        </section>
       </main>
     </>
   )
