@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Header } from './Components/Header';
 import { Amando } from './Components/Amando';
 import { Cronometro } from './Components/Cronometro';
+import { Carrossel } from './Components/Carrossel';
 
 import './Sucesso.css'
 import { PrimeiroEncontro } from './Components/PrimeiroEncontro';
@@ -22,6 +23,8 @@ function Sucesso() {
             </span>
           ))}
         </div>
+
+        <Carrossel />
 
         <Amando />
 
