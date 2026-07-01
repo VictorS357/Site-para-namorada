@@ -5,6 +5,7 @@ import { Cronometro } from './Components/Cronometro';
 
 import './Sucesso.css'
 import { PrimeiroEncontro } from './Components/PrimeiroEncontro';
+import { DiaEuTeAmo } from './Components/DiaEuTeAmo';
 
 
 
@@ -25,6 +26,8 @@ function Sucesso() {
         <Amando />
 
         <PrimeiroEncontro />
+
+        <DiaEuTeAmo />
       </main>
     </>
   )

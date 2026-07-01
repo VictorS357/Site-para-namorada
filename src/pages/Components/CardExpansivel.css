@@ -52,6 +52,30 @@
   text-align: center;
 }
 
+.card-expansivel .galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.card-expansivel .galeria .foto {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 8px 16px rgba(89, 13, 34, 0.35);
+}
+
+.card-expansivel .texto {
+  color: var(--texto-vinho);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+  white-space: pre-line;
+}
+
 @media (max-width: 480px) {
   .card-expansivel .card-cabecalho {
     padding: 20px;

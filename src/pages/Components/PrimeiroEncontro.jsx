@@ -1,7 +1,6 @@
 import foto1 from '../../assets/primeiro-encontro1.jpeg';
 import foto2 from '../../assets/primeiro-encontro2.jpeg';
 import { CardExpansivel } from './CardExpansivel';
-import './PrimeiroEncontro.css';
 
 export function PrimeiroEncontro() {
   return (
