@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import './Pedido.css'
 
 const FRASES_NAO = [
   'Não',
@@ -34,7 +35,7 @@ function Pedido() {
       </div>
 
       <section className="cartao">
-        <h1>Você quer namorar comigo?</h1>
+        <h1>Amor, você tá pronta para um novo "nós"?</h1>
         <p className="subtitulo">A resposta certa é só uma... 😉</p>
 
         <div className="botoes">
