@@ -9,16 +9,6 @@
   background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #ffdde1 100%);
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  height: 100px;
-}
-
-.musica {
-  margin-top: 10px;
-}
-
 .sucesso .coracoes-flutuantes {
   position: absolute;
   inset: 0;
